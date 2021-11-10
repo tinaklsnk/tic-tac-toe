@@ -57,9 +57,13 @@ public:
     bool key8 = false;
     bool key9 = false;
 
-    bool arr[3][3];
+    int arr[3][3];
+    cocos2d::Sprite* GetSprite(int r, int c);
 
     cocos2d::Vec2 center;
+
+    void CheckWinner();
+    bool IsFinished();
 
     //bool  onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
     //void  onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
